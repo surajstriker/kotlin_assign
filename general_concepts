@@ -14,3 +14,63 @@ fun main(args:Array<String>)
     println(result)
 
 }
+3. 
+fun main(args:Array<String>)
+{
+    var avgarray=arrayOf(1,2,3,4,5,6,7,8)
+    var sum:Int=0
+    for(i in 0..avgarray.size-1)
+    {
+        sum=sum+avgarray[i]
+    }
+    var average=sum/(avgarray.size)
+    println(average)
+}
+4.
+fun main(args:Array<String>)
+{
+    var number:Int=5
+    var fac:Int=1
+    for(i in 1..number)
+    {
+        fac=fac*i
+    }
+    println(fac)
+}
+5.
+fun main(args:Array<String>)
+{
+    var number=Integer.valueOf(readLine())
+    when(number){
+    1 -> println("January")
+    2 -> println("Febrauary")
+    3 -> println("March")
+    4 -> println("April")
+    5 -> println("May")
+    6 -> println("June")
+    7 -> println("july")
+    8 -> println("August")
+    9 -> println("September")
+    10 -> println("October")
+    11 -> println("November")
+    12 -> println("December")
+    else ->{
+                print("Number entered is not valid month")
+            }
+
+    
+}
+}
+7.fun main(args:Array<String>)
+{
+    var num_array=arrayOf(1,2,3,4,5,6,7,8)
+    var lar=num_array[0]
+    for(i in 0..num_array.size-1)
+    {
+        if(num_array[i]>lar)
+            {
+                lar=num_array[i]
+            }
+    }
+    println(lar)
+}
