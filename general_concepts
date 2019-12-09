@@ -1,0 +1,16 @@
+fun addNumber(no:Int):Int
+{
+    if(no<=1)
+    {
+        return no;
+    }
+    return no + addNumber(no-1)
+        
+}    
+fun main(args:Array<String>)
+{
+    var number:Int=4;
+    var result=addNumber(number);
+    println(result)
+
+}
