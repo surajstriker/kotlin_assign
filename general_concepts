@@ -74,3 +74,41 @@ fun main(args:Array<String>)
     }
     println(lar)
 }
+9.
+fun main(args:Array<String>)
+{
+    var matrix=Array(2,{IntArray(3)})
+    var count:Int=1
+    for(i in 0..matrix.size-1)
+    {
+        var rowarray=IntArray(3)
+        for(j in 0..rowarray.size-1)
+        {
+            rowarray[j]=count++
+
+        }
+        matrix[i]=rowarray
+    }
+    println("before transposing matrix")
+  
+    for(i in 0..matrix.size-1)
+    {
+        for(j in 0..2)
+        {
+            print(matrix[i][j])
+            print(" ")
+        }
+        println("")
+    }
+    println("after transposing matrix")
+    for(j in 0..2)
+    {
+        for(i in 0..matrix.size-1)
+        {
+            print(matrix[i][j])
+            print(" ")
+        }
+        println("")
+    }
+    
+}
