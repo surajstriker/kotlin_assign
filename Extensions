@@ -1,0 +1,19 @@
+16.
+ class Word(var str:String)
+{
+    fun display():String
+    {
+        return str;
+    }
+}
+fun main(arg:Array<String>)
+{
+    fun Word.check()
+        {
+            
+        println(str.replace(' ','_'));
+        }
+    var new_word=Word("Hello World")
+    println(new_word.display())
+    new_word.check();
+}
