@@ -17,3 +17,23 @@ fun main(arg:Array<String>)
     println(new_word.display())
     new_word.check();
 }
+17.
+class List_class(var str:List<Int>)
+{
+    fun display():List<Int>
+    {
+        return str;
+    }
+}
+fun main(arg:Array<String>)
+{
+    fun List_class.rev():List<Int>
+    {
+        return str.asReversed()
+    
+    }
+    var list=listOf(1,2,3,3,4,5)
+    var List_obj=List_class(list)
+    println(List_obj.rev())
+    
+}
