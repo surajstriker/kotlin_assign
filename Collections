@@ -1,3 +1,48 @@
+25.
+fun main(arg:Array<String>)
+{
+        val words=arrayOf("Ruby","C","Python","Java")
+        for(i in 0..words.size-1)
+        {
+            for(j in 0..words.size-2)
+            {
+                if(words[j][0]>words[j+1][0])
+                {
+                    var temp=words[j]
+                    words[j]=words[j+1]
+                    words[j+1]=temp
+                }
+            }
+        }
+        for(count in 0..words.size-1)
+        {
+            print(words[count])
+            print("  ")
+        }
+                    
+            
+}
+29.
+import java.util.*
+fun main(arg:Array<String>)
+{
+    var list=ArrayList<CustomObject>()
+    list.add(CustomObject("X"))
+    list.add(CustomObject("vb"))
+    list.add(CustomObject("ac"))
+    list.add(CustomObject("cd"))
+    list.add(CustomObject("Aa"))
+    
+    var sortedList=list.sortedWith(compareBy({ it.customProperty}))
+        for(obj in sortedList)
+        {
+            println(obj.customProperty)
+        }
+    
+}
+public class CustomObject(val customProperty:String){
+}
+30.
 fun main(arg:Array<String>)
 {
         val words=arrayOf("Ruby","C","Python","Java")
