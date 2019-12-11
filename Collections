@@ -12,6 +12,25 @@ fun main(args: Array<String>) {
 	println(list1)
     println(list2)
     }
+26.
+import java.util.*;
+fun main(args: Array<String>) {
+ var list1=ArrayList<Int>()
+    list1.add(23)
+    list1.add(45)
+    list1.add(67)
+	println(list1)
+ var list2=ArrayList<Int>()
+    list2.add(89)
+    list2.add(10)
+    list2.add(11)
+    list2.add(12)
+println(list2)
+println("After merging")
+list1.addAll(list2)
+print(list1)
+    }
+ 
 27.
 fun main(args: Array<String>) {
     var capitals = hashMapOf<Int, String>()
