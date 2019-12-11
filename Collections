@@ -1,35 +1,25 @@
 25.
-fun main(arg:Array<String>)
-{
-        val words=arrayOf("Ruby","C","Python","Java")
-        for(i in 0..words.size-1)
-        {
-            for(j in 0..words.size-2)
-            {
-                if(words[j][0]>words[j+1][0])
-                {
-                    var temp=words[j]
-                    words[j]=words[j+1]
-                    words[j+1]=temp
-                }
-            }
-        }
-        for(count in 0..words.size-1)
-        {
-            print(words[count])
-            print("  ")
-        }
-                    
-            
-}
+import java.util.*;
+fun main(args: Array<String>) {
+    var llist = hashMapOf<Int, String>()
+    llist.put(1, "Aa")
+    llist.put(2, "Bb")
+    llist.put(3, "Cc")
+    llist.put(4, "Dd")
+    llist.put(5, "Ee")
+    val list1=ArrayList(llist.keys)
+    val list2=ArrayList(llist.values)
+	println(list1)
+    println(list2)
+    }
 27.
 fun main(args: Array<String>) {
-    var capitals = hashMapOf<String, String>()
-    capitals.put("Nepal", "Kathmandu")
-    capitals.put("India", "New Delhi")
-    capitals.put("United States", "Washington")
-    capitals.put("England", "London")
-    capitals.put("Australia", "Canberra")
+    var capitals = hashMapOf<Int, String>()
+    capitals.put(1, "Kathmandu")
+    capitals.put(2, "New Delhi")
+    capitals.put(3, "Washington")
+    capitals.put(4, "London")
+    capitals.put(5, "Canberra")
     val result = capitals.toList().sortedBy { (_, value) -> value}.toMap()
     for (entry in result) {
         print("Key: " + entry.key)
